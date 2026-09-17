@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+
+@theme {
+    --color-primary: #D60000;
+    --color-secondary: #1F1F1F;
+    --color-bg-base: #FFFFFF;
+    --color-bg-section: #F7F7F7;
+    --color-text-main: #2E2E2E;
+    --color-border-main: #E5E5E5;
+
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
