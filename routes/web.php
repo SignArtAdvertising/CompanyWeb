@@ -24,3 +24,9 @@ Route::prefix('management')->group(function () {
         Route::resource('billboards', BillboardController::class);
     });
 });
+
+// Route otomatis untuk mencegah database Supabase "tertidur"
+Route::get('/api/keep-alive', function () {
+    \Illuminate\Support\Facades\DB::table('users')->first();
+    return response()->json(['status' => 'Database is awake!']);
+});

@@ -27,5 +27,11 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
+    ],
+    "crons": [
+        {
+            "path": "/api/keep-alive",
+            "schedule": "0 0 * * *"
+        }
     ]
 }
