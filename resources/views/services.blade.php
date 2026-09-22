@@ -7,7 +7,7 @@
 {{-- ===================== HERO SECTION ===================== --}}
 <div class="relative min-h-[55vh] flex items-center bg-secondary overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&auto=format&fit=crop&q=80" alt="Workshop" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/workshop.jpg') }}" alt="Workshop" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
         <div class="max-w-2xl">
@@ -144,7 +144,7 @@
 
             <!-- Right: Image with overlay badge -->
             <div class="relative">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80" alt="Manufacturing Floor" class="w-full h-[520px] object-cover rounded shadow-xl">
+                <img src="{{ asset('images/workshop.jpg') }}" alt="Manufacturing Floor" class="w-full h-[520px] object-cover rounded shadow-xl">
                 <div class="absolute bottom-6 left-6 bg-black/80 text-white px-6 py-4 rounded">
                     <p class="text-primary text-[10px] font-bold uppercase tracking-widest">20+ YEARS</p>
                     <p class="text-white text-sm font-bold uppercase tracking-wide">MANUFACTURING EXCELLENCE</p>
