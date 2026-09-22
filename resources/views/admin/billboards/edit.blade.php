@@ -114,7 +114,7 @@
                 <label class="block text-sm font-medium text-gray-700">Image Area (Foto Billboard)</label>
                 @if($billboard->image_area)
                     <div class="mb-2">
-                        <img src="{{ Storage::url($billboard->image_area) }}" class="h-20 object-cover rounded">
+                        <img src="{{ Storage::disk('s3')->url($billboard->image_area) }}" class="h-20 object-cover rounded">
                     </div>
                 @endif
                 <input type="file" name="image_area" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 sm:text-sm">
@@ -125,7 +125,7 @@
                 <label class="block text-sm font-medium text-gray-700">Image Denah (Peta Lokasi)</label>
                 @if($billboard->image_denah)
                     <div class="mb-2">
-                        <img src="{{ Storage::url($billboard->image_denah) }}" class="h-20 object-cover rounded">
+                        <img src="{{ Storage::disk('s3')->url($billboard->image_denah) }}" class="h-20 object-cover rounded">
                     </div>
                 @endif
                 <input type="file" name="image_denah" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 sm:text-sm">

@@ -40,7 +40,7 @@
                     </div>
                     <div class="p-6">
                         @if($billboard->image_area)
-                            <img src="{{ Storage::url($billboard->image_area) }}" alt="Area {{ $billboard->name }}" class="w-full h-auto rounded-lg shadow-sm">
+                            <img src="{{ Storage::disk('s3')->url($billboard->image_area) }}" alt="Area {{ $billboard->name }}" class="w-full h-auto rounded-lg shadow-sm">
                         @else
                             <div class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                                 <span>Tidak ada gambar area promosi</span>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="p-6">
                         @if($billboard->image_denah)
-                            <img src="{{ Storage::url($billboard->image_denah) }}" alt="Denah {{ $billboard->name }}" class="w-full h-auto rounded-lg shadow-sm">
+                            <img src="{{ Storage::disk('s3')->url($billboard->image_denah) }}" alt="Denah {{ $billboard->name }}" class="w-full h-auto rounded-lg shadow-sm">
                         @else
                             <div class="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                                 <span>Tidak ada gambar denah lokasi</span>

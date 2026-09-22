@@ -48,7 +48,7 @@
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 flex flex-col fade-in-up">
                     <div class="relative h-64 overflow-hidden group">
                         @if($item->image_area)
-                            <img src="{{ Storage::url($item->image_area) }}" alt="{{ $item->name }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <img src="{{ Storage::disk('s3')->url($item->image_area) }}" alt="{{ $item->name }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         @else
                             <div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400">
                                 <i data-lucide="image" class="w-16 h-16 opacity-50"></i>
